@@ -21,7 +21,7 @@ export function HeroSection() {
               <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full border border-purple-500/20">
                 <span className="text-sm font-medium bg-gradient-to-r 
                 from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                <span className='bg-black dark:bg-white px-4 py-2 rounded-full dark:text-black text-white mr-2'>31% off</span>  Limited time offer                
+                <span className='bg-black dark:bg-white px-4 py-2 rounded-full dark:text-black text-white mr-2 animate-zoom-in-out inline-block'>31% off</span>  Limited time offer                
                 </span>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-foreground">
@@ -93,7 +93,7 @@ export function HeroSection() {
             
             {/* Floating elements */}
             <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-pulse" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse" />
+            <div className="mb-4 absolute -bottom-2 -left-2 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse" />
           </div>
         </div>
       </div>
