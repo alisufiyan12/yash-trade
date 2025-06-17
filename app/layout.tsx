@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'YASH TRADING',
   description: 'Premium Telegram trading signals for Quotex markets.',
+  icons: {
+    icon: '/white-mode-logo.png',
+  },
 };
 
 export default function RootLayout({
