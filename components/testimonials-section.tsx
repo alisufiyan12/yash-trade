@@ -64,7 +64,7 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
-            Testimonials
+              Testimonials
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             See what our community members are saying about our platform
@@ -100,10 +100,10 @@ export function TestimonialsSection() {
           <div className="overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {getVisibleMembers().map((member) => (
-                <Card 
+              <Card 
                   key={member.id}
                   className="group relative overflow-hidden bg-card border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-                >
+              >
                   <CardContent className="p-0">
                     <div className="relative aspect-[9/10] overflow-hidden">
                       <Avatar className="w-full h-full rounded-none">
@@ -115,11 +115,11 @@ export function TestimonialsSection() {
                         <AvatarFallback className="w-full h-full rounded-none text-2xl bg-muted">
                           {member.id}
                         </AvatarFallback>
-                      </Avatar>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    </Avatar>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
             </div>
           </div>
 
