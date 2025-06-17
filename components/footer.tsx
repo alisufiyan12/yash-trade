@@ -13,7 +13,7 @@ export function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <div className="relative w-24 h-24">
                 <Image
-                  src="/dark-mode-logo.png"
+                  src="/white-mode-logo.png"
                   alt="YASH Trading"
                   fill
                   className="object-contain dark:hidden"

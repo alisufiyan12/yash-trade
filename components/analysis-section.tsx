@@ -254,7 +254,7 @@ export function AnalysisSection() {
   }]
 
   return (
-    <section id="analysis" className="py-24 bg-background text-slate-800 dark:text-white relative overflow-hidden">
+    <section id="analysis" className="pt-12 pb-12 bg-background text-slate-800 dark:text-white relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-grid-16" />
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl" />

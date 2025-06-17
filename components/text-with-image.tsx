@@ -9,7 +9,7 @@ const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false })
 
 export function TextWithImage() {
   return (
-    <section className="py-24 bg-background">
+    <section className="pt-24 pb-12 bg-background">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-24 items-center">
           <div className="relative border border-purple-500/20 rounded-lg over">
@@ -17,7 +17,7 @@ export function TextWithImage() {
             bg-black border border-purple-500/20 rounded-lg overflow-hidden">
               <Image
                 src="/analysis-ss.jpeg"
-                alt=""
+                alt="yash-trading-logo"
                 width={100}
                 height={100}
                 className="w-full h-full object-cover"
@@ -61,14 +61,14 @@ export function TextWithImage() {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 md:gap-6 gap-y-10 md:gap-y-0">
               <div className="flex items-start space-x-3">
                 <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Shield className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1 text-foreground">Non-Martingale Approach</h3>
-                  <p className="text-sm text-muted-foreground">Our signals ensure accuracy and consistency using a non-martingale strategy — helping you earn a minimum of $100 daily</p>
+                  <p className="text-sm text-muted-foreground">Our signals ensure accuracy and consistency — helping you earn a minimum of $100 daily</p>
                 </div>
               </div>
 

@@ -25,7 +25,7 @@ export function FeaturesSection() {
   ]
 
   return (
-    <section id="features" className="py-24 bg-background relative overflow-hidden">
+    <section id="features" className="pt-12 pb-12 bg-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-grid-16" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
