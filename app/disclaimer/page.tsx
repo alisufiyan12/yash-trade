@@ -33,7 +33,7 @@ export default function DisclaimerPage() {
               <section>
                 <h2 className="text-2xl font-bold mb-4">General Risk Disclosure</h2>
                 <p>
-                  Trading cryptocurrencies, forex, stocks, and other financial instruments carries a high level of risk and may not be suitable for all investors. 
+                  Trading in Quotex and other financial instruments carries a high level of risk and may not be suitable for all investors. 
                   The high degree of leverage can work against you as well as for you. Before deciding to trade, you should carefully consider your investment 
                   objectives, level of experience, and risk appetite.
                 </p>
@@ -74,7 +74,7 @@ export default function DisclaimerPage() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold mb-4">Forex Trading Risks</h2>
+                <h2 className="text-2xl font-bold mb-4">Quotex Trading Risks</h2>
                 <p>
                   Foreign exchange trading carries specific risks:
                 </p>

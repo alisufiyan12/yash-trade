@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
+import { ModeToggle } from '@/components/ui/mode-toggle'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,7 +15,8 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="relative w-8 h-8">
+            <div className="relative w-24 h-24 overflow-hidden my-2">
+              <a href="/">
               <Image
                 src="/dark-mode-logo.png"
                 alt="YASH Trading"
@@ -27,15 +29,18 @@ export function Header() {
                 fill
                 className="object-contain hidden dark:block"
               />
+              </a>
             </div>
+            <a href="/">
             <span className="text-xl font-bold">
               YASH TRADING
             </span>
+            </a>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <a href="/" className="text-foreground hover:text-primary transition-colors">
               Home
             </a>
             <a href="#features" className="text-foreground hover:text-primary transition-colors">
@@ -54,6 +59,7 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
+            <ModeToggle />
             <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
               Join Telegram
             </Button>
@@ -87,6 +93,10 @@ export function Header() {
               <a href="/disclaimer" className="block text-foreground hover:text-primary transition-colors">
                 Disclaimer
               </a>
+              <div className="flex items-center py-2">
+                <span className="mr-2">Theme:</span>
+                <ModeToggle />
+              </div>
               <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                 Join Telegram
               </Button>

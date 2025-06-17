@@ -6,8 +6,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'TokenFlow - The Future of Digital Finance',
-  description: 'Next generation token platform with secure, innovative financial solutions. Join industry leaders in digital finance.',
+  title: 'YASH TRADING',
+  description: 'Premium Telegram trading signals for Quotex markets.',
 };
 
 export default function RootLayout({

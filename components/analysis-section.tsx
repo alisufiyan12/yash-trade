@@ -8,30 +8,30 @@ import dynamic from 'next/dynamic'
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false })
 
 const pieData = [
-  { name: 'Marketing', value: 25, color: '#3B82F6' },
-  { name: 'Business Development', value: 25, color: '#8B5CF6' },
-  { name: 'Product Development', value: 10, color: '#10B981' },
-  { name: 'Reserve', value: 10, color: '#F59E0B' },
-  { name: 'Reserve 2', value: 10, color: '#EF4444' },
-  { name: 'Token Sale', value: 20, color: '#EC4899' }
+  { name: 'India', value: 93, color: '#3B82F6' },
+  { name: 'Indonesia', value: 56, color: '#8B5CF6' },
+  { name: 'Malaysia', value: 78, color: '#10B981' },
+  { name: 'Vietnam', value: 49, color: '#F59E0B' },
+  { name: 'United Kingdom', value: 34, color: '#EF4444' },
+  { name: 'Brazil', value: 28, color: '#EC4899' }
 ]
 
 const audienceData = [
-  { country: 'India', value: 35, flag: '🇮🇳' },
-  { country: 'Indonesia', value: 20, flag: '🇮🇩' },
-  { country: 'Malaysia', value: 15, flag: '🇲🇾' },
-  { country: 'Vietnam', value: 12, flag: '🇻🇳' },
-  { country: 'UK', value: 10, flag: '🇬🇧' },
-  { country: 'Brazil', value: 8, flag: '🇧🇷' }
+  { country: 'India', value: 93, flag: '🇮🇳' },
+  { country: 'Indonesia', value: 56, flag: '🇮🇩' },
+  { country: 'Malaysia', value: 78, flag: '🇲🇾' },
+  { country: 'Vietnam', value: 49, flag: '🇻🇳' },
+  { country: 'United Kingdom', value: 34, flag: '🇬🇧' },
+  { country: 'Brazil', value: 28, flag: '🇧🇷' }
 ]
 
 const progressData = [
-  { label: 'Marketing', value: 25, color: 'bg-blue-500' },
-  { label: 'Business Development', value: 25, color: 'bg-purple-500' },
-  { label: 'Product Development', value: 10, color: 'bg-green-500' },
-  { label: 'Reserve', value: 10, color: 'bg-yellow-500' },
-  { label: 'Reserve 2', value: 10, color: 'bg-red-500' },
-  { label: 'Token Sale', value: 20, color: 'bg-pink-500' }
+  { label: 'India', value: 93, color: 'bg-blue-500' },
+  { label: 'Indonesia', value: 56, color: 'bg-purple-500' },
+  { label: 'Malaysia', value: 78, color: 'bg-green-500' },
+  { label: 'Vietnam', value: 49, color: 'bg-yellow-500' },
+  { label: 'United Kingdom', value: 34, color: 'bg-red-500' },
+  { label: 'Brazil', value: 28, color: 'bg-pink-500' }
 ]
 
 export function AnalysisSection() {
@@ -106,14 +106,14 @@ export function AnalysisSection() {
               show: true,
               fontSize: '16px',
               fontWeight: 600,
-              color: '#ffffff',
+              color: 'var(--chart-label-color, #ffffff)',
               offsetY: -10
             },
             value: {
               show: true,
               fontSize: '24px',
               fontWeight: 700,
-              color: '#ffffff',
+              color: 'var(--chart-label-color, #ffffff)',
               offsetY: 10,
               formatter: (val: string) => val + '%'
             },
@@ -123,7 +123,7 @@ export function AnalysisSection() {
               label: 'Total',
               fontSize: '14px',
               fontWeight: 400,
-              color: '#ffffff',
+              color: 'var(--chart-label-color, #ffffff)',
               formatter: () => '100%'
             }
           }
@@ -254,7 +254,7 @@ export function AnalysisSection() {
   }]
 
   return (
-    <section id="analysis" className="py-24 bg-background text-white relative overflow-hidden">
+    <section id="analysis" className="py-24 bg-background text-slate-800 dark:text-white relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-grid-16" />
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl" />
@@ -262,34 +262,19 @@ export function AnalysisSection() {
       
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Token Allocation & Funds Distribution
-          </h2>
-          <p className="text-lg text-white/70 max-w-2xl mx-auto mb-8">
-            Join the industry leaders to discuss where the markets are heading. We accept token payments.
-          </p>
-          
           {/* Tab buttons */}
-          <div className="inline-flex rounded-full bg-white/10 backdrop-blur-sm p-1 border border-white/20">
+          <div className="inline-flex rounded-full bg-slate-200/50 dark:bg-white/10 backdrop-blur-sm p-1 border border-slate-300/50 dark:border-white/20">
             <Button
-              variant={activeTab === 'Distribution' ? 'default' : 'ghost'}
-              className={`rounded-full px-6 transition-all duration-300 ${
-                activeTab === 'Distribution' 
-                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg' 
-                  : 'text-white hover:bg-white/10'
-              }`}
               onClick={() => setActiveTab('Distribution')}
+              variant="ghost"
+              className={activeTab === 'Distribution' ? 'bg-slate-200/50 dark:bg-white/10 text-slate-800 dark:text-white rounded-full' : 'rounded-full text-slate-600 dark:text-white/70 hover:text-slate-800 dark:hover:text-white hover:bg-slate-200/30 dark:hover:bg-white/5'}
             >
               Distribution
             </Button>
             <Button
-              variant={activeTab === 'Funding Allocation' ? 'default' : 'ghost'}
-              className={`rounded-full px-6 transition-all duration-300 ${
-                activeTab === 'Funding Allocation' 
-                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg' 
-                  : 'text-white hover:bg-white/10'
-              }`}
               onClick={() => setActiveTab('Funding Allocation')}
+              variant="ghost"
+              className={activeTab === 'Funding Allocation' ? 'bg-slate-200/50 dark:bg-white/10 text-slate-800 dark:text-white rounded-full' : 'rounded-full text-slate-600 dark:text-white/70 hover:text-slate-800 dark:hover:text-white hover:bg-slate-200/30 dark:hover:bg-white/5'}
             >
               Funding Allocation
             </Button>
@@ -303,16 +288,16 @@ export function AnalysisSection() {
               {progressData.slice(0, 3).map((item, index) => (
                 <div key={index} className="group">
                   <div className="flex justify-between items-center mb-3">
-                    <span className="text-white font-medium text-sm">{item.label}:</span>
-                    <span className="text-white font-bold text-lg">
+                    <span className="text-slate-700 dark:text-white font-medium text-sm">{item.label}:</span>
+                    <span className="text-slate-800 dark:text-white font-bold text-lg">
                       {animatedValues[index]}%
                     </span>
                   </div>
-                  <div className="w-full bg-white/10 rounded-full h-3 overflow-hidden">
+                  <div className="w-full bg-slate-200/70 dark:bg-white/10 rounded-full h-3 overflow-hidden">
                     <div
                       className={`h-3 rounded-full ${item.color} transition-all duration-1000 ease-out relative overflow-hidden`}
                       style={{ 
-                        width: `${(animatedValues[index] / item.value) * 100}%`,
+                        width: `${animatedValues[index]}%`,
                         maxWidth: '100%'
                       }}
                     >
@@ -325,7 +310,7 @@ export function AnalysisSection() {
             </div>
 
             {/* Center - Interactive Pie Chart */}
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <div className="w-80 h-80 relative">
                 <Chart
                   options={pieChartOptions}
@@ -335,33 +320,55 @@ export function AnalysisSection() {
                   height="100%"
                 />
                 {selectedPieSlice !== null && (
-                  <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg p-2 text-xs">
-                    <div className="text-white font-medium">
+                  <div className="absolute top-4 right-4 bg-slate-100/80 dark:bg-black/50 backdrop-blur-sm rounded-lg p-2 text-xs border border-slate-200 dark:border-transparent shadow-sm">
+                    <div className="text-slate-800 dark:text-white font-medium">
                       {pieData[selectedPieSlice]?.name}
                     </div>
-                    <div className="text-white/70">
+                    <div className="text-slate-600 dark:text-white/70">
                       {pieData[selectedPieSlice]?.value}%
                     </div>
                   </div>
                 )}
               </div>
-            </div>
+            </div> */}
+
+            <div className="aspect-[9/16] max-w-xs mx-auto rounded-xl overflow-hidden shadow-xl 
+            bg-black border border-purple-500/20">
+               <video 
+                className="w-full h-full object-cover"
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                controls
+              >
+                <source 
+                  src="https://www.dropbox.com/scl/fi/xxlxey8go4n65rnpazstk/text-with-imahe-yash-video.mov?rlkey=xr886c5qcm5rpdjilzow2pim2&st=8oanwtha&dl=1" 
+                  type="video/quicktime" 
+                />
+                <source 
+                  src="https://www.dropbox.com/scl/fi/xxlxey8go4n65rnpazstk/text-with-imahe-yash-video.mov?rlkey=xr886c5qcm5rpdjilzow2pim2&st=8oanwtha&dl=1" 
+                  type="video/mp4" 
+                />
+                Your browser does not support the video tag.
+              </video>
+              </div>
 
             {/* Right side - Progress bars */}
             <div className="space-y-6">
               {progressData.slice(3).map((item, index) => (
                 <div key={index + 3} className="group">
                   <div className="flex justify-between items-center mb-3">
-                    <span className="text-white font-medium text-sm">{item.label}:</span>
-                    <span className="text-white font-bold text-lg">
+                    <span className="text-slate-700 dark:text-white font-medium text-sm">{item.label}:</span>
+                    <span className="text-slate-800 dark:text-white font-bold text-lg">
                       {animatedValues[index + 3]}%
                     </span>
                   </div>
-                  <div className="w-full bg-white/10 rounded-full h-3 overflow-hidden">
+                  <div className="w-full bg-slate-200/70 dark:bg-white/10 rounded-full h-3 overflow-hidden">
                     <div
                       className={`h-3 rounded-full ${item.color} transition-all duration-1000 ease-out relative overflow-hidden`}
                       style={{ 
-                        width: `${(animatedValues[index + 3] / item.value) * 100}%`,
+                        width: `${animatedValues[index + 3]}%`,
                         maxWidth: '100%'
                       }}
                     >
@@ -377,8 +384,8 @@ export function AnalysisSection() {
 
         {activeTab === 'Funding Allocation' && (
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-8">
-              <h3 className="text-2xl font-bold mb-8 text-center">Global Audience Distribution</h3>
+            <div className="bg-slate-100/80 dark:bg-white/5 backdrop-blur-sm rounded-2xl border border-slate-300/50 dark:border-white/10 p-8">
+              <h3 className="text-2xl font-bold mb-8 text-center text-foreground">Global Audience Distribution</h3>
               <div className="h-96">
                 <Chart
                   options={areaChartOptions}
@@ -392,10 +399,10 @@ export function AnalysisSection() {
               {/* Country flags and percentages */}
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-8">
                 {audienceData.map((item, index) => (
-                  <div key={index} className="text-center p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
+                  <div key={index} className="text-center p-4 rounded-lg bg-slate-200/30 dark:bg-white/5 hover:bg-slate-200/50 dark:hover:bg-white/10 transition-colors border border-slate-300/30 dark:border-white/10">
                     <div className="text-2xl mb-2">{item.flag}</div>
-                    <div className="text-sm font-medium text-white">{item.country}</div>
-                    <div className="text-lg font-bold text-purple-400">{item.value}%</div>
+                    <div className="text-sm font-medium text-foreground">{item.country}</div>
+                    <div className="text-lg font-bold text-purple-600 dark:text-purple-400">{item.value}%</div>
                   </div>
                 ))}
               </div>

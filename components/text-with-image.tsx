@@ -1,34 +1,47 @@
+"use client"
+
 import { Shield, Zap, Users, TrendingUp } from 'lucide-react'
+import dynamic from 'next/dynamic'
+import Image from 'next/image'
+
+// Dynamically import ReactPlayer to avoid SSR issues
+const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false })
 
 export function TextWithImage() {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image */}
-          <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-3xl border border-purple-500/20 overflow-hidden">
-              <img
-                src="https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg"
-                alt="Blockchain Technology"
+        <div className="grid lg:grid-cols-2 gap-24 items-center">
+          <div className="relative border border-purple-500/20 rounded-lg over">
+            <div className="w-full h-full overflow-hidden shadow-xl 
+            bg-black border border-purple-500/20 rounded-lg overflow-hidden">
+              <Image
+                src="/analysis-ss.jpeg"
+                alt=""
+                width={100}
+                height={100}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-600/20" />
-            </div>
+
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-pink-600/10 
+              pointer-events-none" />
+              
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 
+              rounded-full animate-pulse" />
+              <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 
+              rounded-full animate-pulse" />
+              </div>
             
-            {/* Floating stats */}
             <div className="absolute -top-6 -right-6 bg-background border border-border rounded-xl p-4 shadow-lg">
-              <div className="text-2xl font-bold text-green-600">+24%</div>
+              <div className="text-2xl font-bold text-green-600">+73%</div>
               <div className="text-sm text-muted-foreground">Growth</div>
             </div>
             
             <div className="absolute -bottom-6 -left-6 bg-background border border-border rounded-xl p-4 shadow-lg">
-              <div className="text-2xl font-bold text-blue-600">50K</div>
+              <div className="text-2xl font-bold text-blue-600">$50K</div>
               <div className="text-sm text-muted-foreground">Transactions</div>
             </div>
           </div>
-
-          {/* Text Content */}
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full border border-purple-500/20">
@@ -36,15 +49,15 @@ export function TextWithImage() {
                   Why Choose Us
                 </span>
               </div>
-              <h2 className="text-3xl lg:text-4xl font-bold">
-                Built for the
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
+                How we are
                 <span className="block bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  Next Generation
+                  Different
                 </span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                Our platform combines cutting-edge blockchain technology with user-friendly interfaces, 
-                providing secure and efficient token management solutions for everyone.
+                We are different from other trading platforms in that we provide 
+                secure and efficient token management solutions for everyone.
               </p>
             </div>
 
@@ -54,8 +67,8 @@ export function TextWithImage() {
                   <Shield className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Bank-Level Security</h3>
-                  <p className="text-sm text-muted-foreground">Multi-layer encryption and security protocols</p>
+                  <h3 className="font-semibold mb-1 text-foreground">Non-Martingale Approach</h3>
+                  <p className="text-sm text-muted-foreground">Our signals ensure accuracy and consistency using a non-martingale strategy — helping you earn a minimum of $100 daily</p>
                 </div>
               </div>
 
@@ -64,8 +77,8 @@ export function TextWithImage() {
                   <Zap className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Lightning Fast</h3>
-                  <p className="text-sm text-muted-foreground">Instant transactions with minimal fees</p>
+                  <h3 className="font-semibold mb-1 text-foreground">Smart Risk Management – No Martingale</h3>
+                  <p className="text-sm text-muted-foreground">We never double trades after losses. Every signal uses proper risk control to protect your capital.</p>
                 </div>
               </div>
 
@@ -74,8 +87,8 @@ export function TextWithImage() {
                   <Users className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Community Driven</h3>
-                  <p className="text-sm text-muted-foreground">Governed by our token holders</p>
+                  <h3 className="font-semibold mb-1 text-foreground">High-Accuracy Trade Setups</h3>
+                  <p className="text-sm text-muted-foreground">Each trade is based on solid analysis — not random entries or emotional decisions.</p>
                 </div>
               </div>
 
@@ -84,8 +97,8 @@ export function TextWithImage() {
                   <TrendingUp className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">High Returns</h3>
-                  <p className="text-sm text-muted-foreground">Competitive staking rewards</p>
+                  <h3 className="font-semibold mb-1 text-foreground">Sustainable, Consistent Growth</h3>
+                  <p className="text-sm text-muted-foreground">We aim for steady profits without risky doubling strategies — safe, long-term results.</p>
                 </div>
               </div>
             </div>

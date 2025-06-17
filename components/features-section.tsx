@@ -1,26 +1,26 @@
-import { Smartphone, Building2, Shield, Lock } from 'lucide-react'
+import { Brain, ChartCandlestick, Trophy, Hammer } from 'lucide-react'
 
 export function FeaturesSection() {
   const features = [
     {
-      icon: Smartphone,
-      title: "Mobile Payment",
-      description: "The process of taking into account the collective opinion of a group"
+      icon: Hammer,
+      title: "Developing a Trader’s Mindset",
+      description: "Learn to think and react like a professional — with patience, focus, and emotional discipline — the foundation for consistent decision-making in any market condition."
     },
     {
-      icon: Building2,
-      title: "Investment Projects",
-      description: "The platform helps investors to make easy to purchase and sell their tokens"
+      icon: Brain,
+      title: "Understanding Market Behavior",
+      description: "Master how price behaves over seconds or minutes, enabling accurate predictions and timely decisions in a fixed-duration trading environment."
     },
     {
-      icon: Shield,
-      title: "Protect The Identity",
-      description: "The platform helps investors to make easy to purchase and sell their tokens"
+      icon: ChartCandlestick,
+      title: "Building Daily Trading Routines",
+      description: "Discover how to create structured trading habits that improve discipline, reduce overtrading, and increase consistency throughout your sessions."
     },
     {
-      icon: Lock,
-      title: "Security Your Money",
-      description: "The process of taking into account the collective opinion of a group"
+      icon: Trophy,
+      title: "Real-World Risk-to-Reward Planning",
+      description: "Learn how to manage trade sizes, control exposure, and set achievable targets — essential skills for compounding success without emotional decisions."
     }
   ]
 
@@ -37,11 +37,12 @@ export function FeaturesSection() {
               Features
             </span>
           </div>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Why Choose Our Token?
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
+            Why Choose Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official
+            We are different from other trading platforms in that we provide 
+            secure and efficient token management solutions for everyone.
           </p>
         </div>
 
@@ -62,7 +63,7 @@ export function FeaturesSection() {
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-semibold mb-3 group-hover:text-purple-600 transition-colors">
+                <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                   {feature.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
