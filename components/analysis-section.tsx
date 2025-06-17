@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import dynamic from 'next/dynamic'
+import { YashWatermark } from './yash-watermark'
 
 // Dynamically import ApexCharts to avoid SSR issues
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false })
@@ -333,8 +334,10 @@ export function AnalysisSection() {
             </div> */}
 
             <div className="aspect-[9/16] max-w-xs mx-auto rounded-xl overflow-hidden shadow-xl 
-            bg-black border border-purple-500/20">
-               <video 
+            bg-black border border-purple-500/20 relative">
+              {/* Add watermark */}
+              <YashWatermark size="md" className="z-10" />
+              <video 
                 className="w-full h-full object-cover"
                 autoPlay 
                 muted 

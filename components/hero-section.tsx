@@ -2,6 +2,8 @@
 
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import { YashWatermark } from './yash-watermark'
+import { CountUpStats } from './count-up-stats'
 
 export function HeroSection() {
   return (
@@ -42,15 +44,21 @@ export function HeroSection() {
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
               <div>
-                <div className="text-2xl font-bold text-purple-600">19K+</div>
+                <div className="text-2xl font-bold text-purple-600">
+                  <CountUpStats end={19} suffix="K+" />
+                </div>
                 <div className="text-sm text-muted-foreground">Active Traders</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-pink-600">91%</div>
+                <div className="text-2xl font-bold text-pink-600">
+                  <CountUpStats end={91} suffix="%" />
+                </div>
                 <div className="text-sm text-muted-foreground">Win Rate</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-blue-600">6+ Years</div>
+                <div className="text-2xl font-bold text-blue-600">
+                  <CountUpStats end={6} suffix="+ Years" />
+                </div>
                 <div className="text-sm text-muted-foreground">Market Experience</div>
               </div>
             </div>
@@ -58,7 +66,10 @@ export function HeroSection() {
 
           {/* Video */}
           <div className="relative mt-8 lg:mt-0">
-            <div className="aspect-[9/16] max-w-xs mx-auto rounded-xl overflow-hidden shadow-xl bg-black">
+            <div className="aspect-[9/16] max-w-xs mx-auto rounded-xl overflow-hidden shadow-xl bg-black relative">
+              {/* Watermark */}
+              <YashWatermark size="md" className="z-10" />
+              
               <video 
                 className="w-full h-full object-cover"
                 autoPlay 

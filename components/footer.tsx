@@ -31,20 +31,7 @@ export function Footer() {
               Premium Telegram trading signals for Quotex markets. 
               <br/> Join thousands of successful traders worldwide.
             </p>
-            <div className="flex space-x-3">
-              <Button size="icon" variant="ghost" className="dark:hover:bg-white/10 hover:bg-slate-100/80 text-slate-700 dark:text-white">
-                <Twitter className="w-4 h-4" />
-              </Button>
-              <Button size="icon" variant="ghost" className="dark:hover:bg-white/10 hover:bg-slate-100/80 text-slate-700 dark:text-white">
-                <Linkedin className="w-4 h-4" />
-              </Button>
-              <Button size="icon" variant="ghost" className="dark:hover:bg-white/10 hover:bg-slate-100/80 text-slate-700 dark:text-white">
-                <Github className="w-4 h-4" />
-              </Button>
-              <Button size="icon" variant="ghost" className="dark:hover:bg-white/10 hover:bg-slate-100/80 text-slate-700 dark:text-white">
-                <Mail className="w-4 h-4" />
-              </Button>
-            </div>
+            
           </div>
 
 

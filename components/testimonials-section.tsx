@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { YashWatermark } from './yash-watermark'
 
 const teamMembers = [
   { id: 1, avatar: "/test-1.jpeg" },
@@ -129,6 +130,7 @@ export function TestimonialsSection() {
               >
                   <CardContent className="p-0">
                     <div className="relative aspect-[9/10] overflow-hidden">
+                      <YashWatermark />
                       <Avatar className="w-full h-full rounded-none">
                         <AvatarImage 
                           src={member.avatar} 
@@ -152,6 +154,7 @@ export function TestimonialsSection() {
               >
                   <CardContent className="p-0">
                     <div className="relative aspect-[9/10] overflow-hidden">
+                      <YashWatermark />
                       <Avatar className="w-full h-full rounded-none">
                         <AvatarImage 
                           src={member.avatar} 

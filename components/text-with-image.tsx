@@ -3,25 +3,29 @@
 import { Shield, Zap, Users, TrendingUp } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
+import { YashWatermark } from './yash-watermark'
 
 // Dynamically import ReactPlayer to avoid SSR issues
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false })
 
 export function TextWithImage() {
   return (
-    <section className="pt-24 pb-12 bg-background">
+    <section className="max-w-8xl mx-auto pt-24 pb-12 bg-background overflow-hidden">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-24 items-center">
           <div className="relative border border-purple-500/20 rounded-lg over">
             <div className="w-full h-full overflow-hidden shadow-xl 
             bg-black border border-purple-500/20 rounded-lg overflow-hidden">
-              <Image
-                src="/analysis-ss.jpeg"
-                alt="yash-trading-logo"
-                width={100}
-                height={100}
-                className="w-full h-full object-cover"
-              />
+              <div className="relative w-full h-full">
+                <YashWatermark size="lg" className="z-10" />
+                <Image
+                  src="/analysis-ss.jpeg"
+                  alt="yash-trading-logo"
+                  width={100}
+                  height={100}
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
               <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-pink-600/10 
               pointer-events-none" />
