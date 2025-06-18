@@ -42,9 +42,11 @@ export function Footer() {
               Get the latest market insights and trading tips directly in your inbox.
             </p>
             <div className="flex gap-2">
-              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-                Join Now!
-              </Button>
+              <a href="https://t.me/+PbWGiAKiQaphY2Q1">
+                <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                  Join Now!
+                </Button>
+              </a>
             </div>
           </div>
         </div>

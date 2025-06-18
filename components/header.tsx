@@ -60,9 +60,11 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <ModeToggle />
+            <a href="https://t.me/+PbWGiAKiQaphY2Q1"> 
             <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
               Join Telegram
             </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -97,9 +99,11 @@ export function Header() {
                 <span className="mr-2">Theme:</span>
                 <ModeToggle />
               </div>
-              <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-                Join Telegram
-              </Button>
+              <a href="https://t.me/+PbWGiAKiQaphY2Q1">
+                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                  Join Telegram
+                </Button>
+              </a>
             </div>
           </div>
         )}

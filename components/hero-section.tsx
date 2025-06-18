@@ -36,10 +36,12 @@ export function HeroSection() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
+              <a href="https://t.me/+PbWGiAKiQaphY2Q1">
               <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                 Join Now
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
+              </a>
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
