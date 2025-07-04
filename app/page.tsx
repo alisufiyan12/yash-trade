@@ -5,17 +5,19 @@ import { FeaturesSection } from '@/components/features-section'
 import { AnalysisSection } from '@/components/analysis-section'
 import { TestimonialsSection } from '@/components/testimonials-section'
 import { Footer } from '@/components/footer'
+import NotFound from './error'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Header />
+      {/* <Header />
       <HeroSection />
       <TextWithImage />
       <FeaturesSection />
       <AnalysisSection />
       <TestimonialsSection />
-      <Footer />
+      <Footer /> */}
+      <NotFound />
     </main>
   )
 }
