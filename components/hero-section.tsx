@@ -36,7 +36,7 @@ export function HeroSection() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://t.me/+PbWGiAKiQaphY2Q1">
+              <a href="https://t.me/+FCWwzxJebVI5ZWY1">
               <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                 Join Now
                 <ArrowRight className="ml-2 w-4 h-4" />
@@ -82,11 +82,11 @@ export function HeroSection() {
               >
                 {/* Try both direct DL link formats with appropriate MIME types */}
                 <source 
-                  src="https://dl.dropboxusercontent.com/scl/fi/je0j4wvy5rwylq4ik45xh/hero-section-video.MOV?rlkey=q0gi4a3n1kqvugczioplcoeot&raw=1" 
+                  src="https://www.dropbox.com/scl/fi/678qz4itn4k7wjx13nwoa/avhay-trading.mp4?rlkey=8tx17jef72ggtasa54y6t8vi6&st=ycoutlnq&dl=1" 
                   type="video/quicktime" 
                 />
                 <source 
-                  src="https://dl.dropboxusercontent.com/scl/fi/je0j4wvy5rwylq4ik45xh/hero-section-video.MOV?rlkey=q0gi4a3n1kqvugczioplcoeot&raw=1" 
+                  src="https://www.dropbox.com/scl/fi/678qz4itn4k7wjx13nwoa/avhay-trading.mp4?rlkey=8tx17jef72ggtasa54y6t8vi6&st=ycoutlnq&dl=1" 
                   type="video/mp4" 
                 />
                 Your browser does not support the video tag.

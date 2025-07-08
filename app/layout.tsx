@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'YASH TRADING',
+  title: 'AVHAY Trading',
   description: 'Premium Telegram trading signals for Quotex markets.',
   icons: {
     icon: '/white-mode-logo.png',

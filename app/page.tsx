@@ -10,14 +10,14 @@ import NotFound from './error'
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* <Header />
+      <Header />
       <HeroSection />
       <TextWithImage />
       <FeaturesSection />
       <AnalysisSection />
       <TestimonialsSection />
-      <Footer /> */}
-      <NotFound />
+      <Footer />
+      {/* <NotFound /> */}
     </main>
   )
 }

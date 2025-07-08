@@ -19,13 +19,13 @@ export function Header() {
               <a href="/">
               <Image
                 src="/white-mode-logo.png"
-                alt="YASH Trading"
+                alt="AVHAY Trading"
                 fill
                 className="object-contain dark:hidden"
               />
               <Image
                 src="/white-mode-logo.png"
-                alt="YASH Trading"
+                alt="AVHAY Trading"
                 fill
                 className="object-contain hidden dark:block"
               />
@@ -33,7 +33,7 @@ export function Header() {
             </div>
             <a href="/">
             <span className="text-xl font-bold">
-              YASH TRADING
+              AVHAY TRADING
             </span>
             </a>
           </div>
@@ -60,7 +60,7 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <ModeToggle />
-            <a href="https://t.me/+PbWGiAKiQaphY2Q1"> 
+            <a href="https://t.me/+FCWwzxJebVI5ZWY1"> 
             <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
               Join Telegram
             </Button>
@@ -99,7 +99,7 @@ export function Header() {
                 <span className="mr-2">Theme:</span>
                 <ModeToggle />
               </div>
-              <a href="https://t.me/+PbWGiAKiQaphY2Q1">
+              <a href="https://t.me/+FCWwzxJebVI5ZWY1">
                 <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                   Join Telegram
                 </Button>

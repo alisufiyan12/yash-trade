@@ -25,7 +25,7 @@ export function YashWatermark({
   return (
     <div className={`${positionClasses} ${className}`}>
       <div className={`font-bold transform rotate-[-20deg] opacity-20 select-none ${sizeClasses[size]}`}>
-        <span className="text-green-600">Yash</span>
+        <span className="text-green-600">AVHAY</span>
         <span className="text-red-600">Trading</span>
       </div>
     </div>

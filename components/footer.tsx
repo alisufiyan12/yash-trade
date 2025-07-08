@@ -14,18 +14,18 @@ export function Footer() {
               <div className="relative w-24 h-24">
                 <Image
                   src="/white-mode-logo.png"
-                  alt="YASH Trading"
+                  alt="AVHAY Trading"
                   fill
                   className="object-contain dark:hidden"
                 />
                 <Image
                   src="/white-mode-logo.png"
-                  alt="YASH Trading"
+                  alt="AVHAY Trading"
                   fill
                   className="object-contain hidden dark:block"
                 />
               </div>
-              <span className="text-xl font-bold">YASH TRADING</span>
+              <span className="text-xl font-bold">AVHAY TRADING</span>
             </div>
             <p className="dark:text-white/70 text-slate-800 mb-6">
               Premium Telegram trading signals for Quotex markets. 
@@ -42,7 +42,7 @@ export function Footer() {
               Get the latest market insights and trading tips directly in your inbox.
             </p>
             <div className="flex gap-2">
-              <a href="https://t.me/+PbWGiAKiQaphY2Q1">
+              <a href="https://t.me/+FCWwzxJebVI5ZWY1">
                 <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                   Join Now!
                 </Button>

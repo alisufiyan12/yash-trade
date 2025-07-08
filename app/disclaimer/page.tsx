@@ -14,7 +14,7 @@ export default function DisclaimerPage() {
                 Trading Disclaimer
               </h1>
               <p className="text-lg text-muted-foreground">
-                Important risk disclosure and terms for YASH Trading signals
+                Important risk disclosure and terms for AVHAY Trading signals
               </p>
             </div>
 
@@ -47,7 +47,7 @@ export default function DisclaimerPage() {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Signal Disclaimer</h2>
                 <p>
-                  The trading signals provided by YASH Trading are for educational and informational purposes only. They should not be considered as personalized 
+                  The trading signals provided by AVHAY Trading are for educational and informational purposes only. They should not be considered as personalized 
                   investment advice or recommendations to buy or sell any financial instruments.
                 </p>
                 <ul className="list-disc list-inside space-y-2">
@@ -90,11 +90,11 @@ export default function DisclaimerPage() {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Terms of Use</h2>
                 <p>
-                  By accessing YASH Trading signals through our Telegram channel or any other medium, you acknowledge and agree to the following:
+                  By accessing AVHAY Trading signals through our Telegram channel or any other medium, you acknowledge and agree to the following:
                 </p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>You are solely responsible for your trading decisions</li>
-                  <li>You will not hold YASH Trading liable for any losses incurred</li>
+                  <li>You will not hold AVHAY Trading liable for any losses incurred</li>
                   <li>You understand that trading involves substantial risk of loss</li>
                   <li>You will conduct your own research before making any trades</li>
                   <li>You will use appropriate risk management strategies</li>
@@ -122,7 +122,7 @@ export default function DisclaimerPage() {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Regulatory Compliance</h2>
                 <p>
-                  YASH Trading does not provide investment advice or portfolio management services. We are not registered as an investment advisor 
+                AVHAY Trading does not provide investment advice or portfolio management services. We are not registered as an investment advisor 
                   or broker-dealer. Our signals are educational content and should not be construed as financial advice.
                 </p>
                 <p>
@@ -133,7 +133,7 @@ export default function DisclaimerPage() {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Limitation of Liability</h2>
                 <p>
-                  YASH Trading, its owners, operators, and affiliates shall not be liable for any direct, indirect, incidental, special, or consequential 
+                AVHAY Trading, its owners, operators, and affiliates shall not be liable for any direct, indirect, incidental, special, or consequential 
                   damages arising from the use of our signals or services. This includes but is not limited to trading losses, lost profits, or business interruption.
                 </p>
               </section>
