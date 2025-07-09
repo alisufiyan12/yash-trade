@@ -15,16 +15,16 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="relative w-16 h-16 overflow-hidden my-2">
+            <div className="relative w-12 h-12 overflow-hidden my-4 rounded-lg border border-border">
               <a href="/">
               <Image
-                src="/white-mode-logo.png"
+                src="/avhay logo.png"
                 alt="AVHAY Trading"
                 fill
                 className="object-contain dark:hidden"
               />
               <Image
-                src="/white-mode-logo.png"
+                src="/avhay logo.png"
                 alt="AVHAY Trading"
                 fill
                 className="object-contain hidden dark:block"

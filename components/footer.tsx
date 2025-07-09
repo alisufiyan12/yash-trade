@@ -11,15 +11,15 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="relative w-24 h-24">
+              <div className="relative w-24 h-24 overflow-hidden my-4 rounded-lg border border-border">
                 <Image
-                  src="/white-mode-logo.png"
+                  src="/avhay logo.png"
                   alt="AVHAY Trading"
                   fill
                   className="object-contain dark:hidden"
                 />
                 <Image
-                  src="/white-mode-logo.png"
+                  src="/avhay logo.png"
                   alt="AVHAY Trading"
                   fill
                   className="object-contain hidden dark:block"
