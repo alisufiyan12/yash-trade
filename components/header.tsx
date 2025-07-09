@@ -15,7 +15,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="relative w-12 h-12 overflow-hidden my-4 rounded-lg border border-border">
+            <div className="relative w-12 h-12 overflow-hidden my-4 rounded-lg">
               <a href="/">
               <Image
                 src="/avhay logo.png"
